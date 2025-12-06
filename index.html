@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Видео для машин">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <title>Видео для машин на заказ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Видео для машин на заказ</h1>
+            <p class="subtitle">Профессиональная видеосъемка и монтаж для вашего автомобиля</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Выберите пакет услуг</h2>
+                <p class="description">Профессиональная видеосъемка с шашками, сергеком и полицейскими</p>
+            </div>
+        </section>
+
+        <section class="video-types">
+            <div class="container">
+                <div class="video-grid">
+                    <div class="video-card card-neon-blue">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="18" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M28 26L36 32L28 38V26Z" fill="currentColor"/>
+                                <path d="M16 18V46M48 18V46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="video-preview">
+                            <video class="card-video" controls muted loop autoplay playsinline webkit-playsinline preload="auto" loading="lazy">
+                                <source src="Shashkiii.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                        <h3>Шашки по городу</h3>
+                        <div class="price">4 000 ₸</div>
+                        <ul class="features">
+                            <li>Съемка с шашками</li>
+                            <li>Профессиональный монтаж</li>
+                            <li>Музыкальное сопровождение</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderVideo('Шашки по городу - 4000 тг')">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+
+                    <div class="video-card card-neon-green">
+                        <div class="card-badge popular">Популярно</div>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="18" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M28 26L36 32L28 38V26Z" fill="currentColor"/>
+                                <path d="M16 18V46M48 18V46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="video-preview">
+                            <video class="card-video" controls muted loop autoplay playsinline webkit-playsinline preload="auto" loading="lazy">
+                                <source src="Audi 100 c4.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                        <h3>Шашки по городу с сергеком</h3>
+                        <div class="price">5 000 ₸</div>
+                        <ul class="features">
+                            <li>Съемка с шашками</li>
+                            <li>Фиксация скорости на радаре сергек</li>
+                            <li>Профессиональный монтаж</li>
+                            <li>Звуковое сопровождение</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderVideo('Шашки по городу с сергеком - 5000 тг')">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+
+                    <div class="video-card card-neon-pink">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="18" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M28 26L36 32L28 38V26Z" fill="currentColor"/>
+                                <path d="M16 18V46M48 18V46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="video-preview">
+                            <video class="card-video" controls muted loop autoplay playsinline webkit-playsinline preload="auto" loading="lazy">
+                                <source src="minutny.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                        <h3>1 минутный видео</h3>
+                        <div class="price">6 000 ₸</div>
+                        <p>Профессиональное минутное видео с качественным монтажом и эффектами.</p>
+                        <ul class="features">
+                            <li>Длительность 1 минута</li>
+                            <li>Профессиональный монтаж</li>
+                            <li>Эффекты и переходы</li>
+                            <li>Музыкальное сопровождение</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderVideo('1 минутный видео - 6000 тг')">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+
+                    <div class="video-card card-neon-orange">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="18" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M28 26L36 32L28 38V26Z" fill="currentColor"/>
+                                <path d="M16 18V46M48 18V46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="video-preview">
+                            <video class="card-video" controls muted loop autoplay playsinline webkit-playsinline preload="auto" loading="lazy">
+                                <source src="Largus.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                        <h3>1 минутный видео с полицейскими</h3>
+                        <div class="price">7 000 ₸</div>
+                        <p>Минутное видео с участием полицейских. Драматичный и эффектный сюжет.</p>
+                        <ul class="features">
+                            <li>Длительность 1 минута</li>
+                            <li>Участие полицейских</li>
+                            <li>Профессиональный монтаж</li>
+                            <li>Драматичный сюжет</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderVideo('1 минутный видео с полицейскими - 7000 тг')">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+
+                    <div class="video-card premium">
+                        <div class="card-badge premium-badge">Премиум</div>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="18" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M28 26L36 32L28 38V26Z" fill="currentColor"/>
+                                <path d="M16 18V46M48 18V46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="video-preview">
+                            <video class="card-video" controls muted loop autoplay playsinline webkit-playsinline preload="auto" loading="lazy">
+                                <source src="Sonata 2018.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                        <h3>1 минутный видео полносюжетный</h3>
+                        <div class="price">8 000 ₸</div>
+                        <p>Полный сюжет: полицейские + сергек. Максимально эффектное и профессиональное видео.</p>
+                        <ul class="features">
+                            <li>Длительность 1 минута</li>
+                            <li>Полицейские + сергек</li>
+                            <li>Полный сюжет</li>
+                            <li>Премиум монтаж</li>
+                        </ul>
+                        <button class="order-btn premium" onclick="orderVideo('1 минутный видео полносюжетный (полицейские+сергек) - 8000 тг')">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <p>Выберите тип видео и нажмите "Заказать" для перехода в WhatsApp</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Видео для машин на заказ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
